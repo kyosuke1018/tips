@@ -1,0 +1,37 @@
+private Map<String, String> findLocalesValueByFiles(String packagePath, String baseName, String key) {
+        ClassLoader loader = Thread.currentThread().getContextClassLoader();
+        final String bundlepackage = packagePath;
+        final String bundlename = baseName;
+        String fileNameX = loader.getResource(bundlepackage.replace('.', '/')).getFile();
+        File root = new File(fileNameX);
+        File[] files = root.listFiles(new FilenameFilter() {
+            public boolean accept(File dir, String name) {
+                return name.matches("^" + bundlename + "(_\\w{2}(_\\w{2})?)?\\.properties$");
+            }
+        });
+
+        Map<String, String> resourceValueMap = new HashMap<String, String>();
+
+        for (File file : files) {
+            String localeName = file.getName().replaceAll("^" + bundlename + "(_)?|\\.properties$", "");
+            if (StringUtils.isBlank(localeName)) {
+//                Locale locale = Locale.getDefault();
+//                localeName = locale.getLanguage() + "_" + locale.getCountry();
+                localeName = "DEFAULT";
+
+            }
+            Properties prop = new Properties();
+            try {
+                prop.load(new FileInputStream(file));
+                String value = prop.getProperty(key);
+                resourceValueMap.put(localeName, value);
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(WarehouseSyncController.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IOException e) {
+                Logger.getLogger(WarehouseSyncController.class.getName()).log(Level.SEVERE, null, e);
+            }
+
+        }
+
+        return resourceValueMap;
+    }
