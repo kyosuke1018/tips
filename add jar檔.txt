@@ -1,0 +1,13 @@
+
+add jar檔
+可能要比對更新以下程式
+
+build-impl.xml
+project.properties
+project.xml
+
+
+先備份
+update 
+解決衝突
+commit

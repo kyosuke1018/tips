@@ -1,0 +1,9 @@
+
+
+
+可能因為重複開啟 再成設定異常 
+ex ap server無法開啟
+至以下目錄清除NetBeans cache
+C:\Users\kyle.cheng\AppData\Local\NetBeans\Cache\7.2.1\index
+
+
