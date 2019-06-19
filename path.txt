@@ -1,0 +1,44 @@
+
+
+新主機 david座位
+192.168.2.44
+
+Path
+C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%JAVA_HOME%\bin;%GLASSFISH_HOME%\bin;C:\Program Files\TortoiseSVN\bin;%KETTLE_HOME%;%ANT_HOME%\bin;
+
+環境變數
+GLASSFISH_HOME=D:\glassfish-4.1
+JAVA_HOME=C:\Java\jdk-8u40
+PATH 加上 %JAVA_HOME%\bin;%GLASSFISH_HOME%\bin;
+
+netbeans安裝後 修改netbeans_jdkhome 
+D:\netbeans-8.0.2\netbeans\etc\netbeans.conf
+#netbeans_jdkhome="/path/to/jdk"
+netbeans_jdkhome="C:\Java\jdk-8u40"
+
+
+share folder
+\\192.168.204.10\TCCI_File\
+\\192.168.204.10\TCCI_File\軟體處\Temp\kyle\storage
+
+netbeans
+C:\Users\kyle.cheng\AppData\Local\NetBeans\Cache\7.2.1
+C:\Users\kyle.cheng\AppData\Local\NetBeans\Cache\8.0
+glassfish
+D:\glassfish-3.1.1\glassfish3\glassfish\domains\domain1
+D:\glassfish-4.1\glassfish4\glassfish\domains\domain1
+
+
+
+leetcode
+https://leetcode.com/problems/excel-sheet-column-number/
+pchome
+http://pchome.megatime.com.tw/tse/
+
+svn
+kyle.cheng abcd1234
+http://tcci-svn/svn/src
+
+
+share
+\\192.168.2.54\share\pmDoc
