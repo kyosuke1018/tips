@@ -1,0 +1,139 @@
+ 
+sso
+kyle.cheng
+Tcci1313 (定期換 2013/5/6)
+Tcci0801 (定期換 2013/7/29)
+Tcci1018 (定期換 2013/10/18) 
+Tcci0101 (定期換 2014/01/01) 
+Tcci0301 (定期換 2014/03/20) 
+Tcci0601 (定期換 2014/06/10) 
+Tcci0901 (定期換 2014/09/09) 	
+Tcci1201  	
+Tcci0201 (定期換 2015/02/24) 
+Tcci0501 (定期換 2015/05/20) 
+Tcci0801	
+Tcci1101 (定期換 2015/11/02) 
+Tcci0131 (定期換 2016/01/29) 
+Tcci0401 (定期換 2016/04/15)
+Tcci0701
+Tcci1001
+Tcci1201 (定期換 2016/12/23)
+Tcci0301 (定期換 2017/03/22)
+Tcci0601
+Tcci0901 (定期換 2017/09/13)
+Tcci0101 (定期換 2017/12/6)
+Tcci0228 (定期換 2018/3/1)
+Tcci0528
+Tcci0828 (定期換 2018/8/21)
+Tcci1111 (定期換 2018/11/09)
+Tcci0131 (定期換 2019/1/31)
+Tcci0501 (定期換 2019/4/29)
+
+本機IP:
+192.168.2.111
+192.168.2.44 (2016/07/21 換新電腦)
+
+網址 : http://bi/
+帳號 : TN_KYLE
+密碼 : tcc@2013
+
+印表機 pw:86277
+
+SVN
+kyle.cheng
+abcd1234
+
+webMail
+kyle.cheng@tcci.com.tw
+81
+abcd1234
+
+galssfish
+http://localhost:4848/
+admin	
+abcd1234
+
+JIRA
+kyle.cheng
+Tcci1313
+
+cacoo
+kyle.cheng@tcci.com.tw
+Tcci1313
+
+
+LOCAL IP
+http://localhsot:8080
+192.168.2.111
+
+SAP client
+81 -> 510 520
+62 -> 511 587
+TN_JACKSON
+abcd1234
+
+postgres sql
+ip:192.168.204.48
+port:5432
+user:postgres
+pw:Xsw2zaq1   
+
+Database: health_exam
+User: he_user
+Password: heTcci
+
+
+ip:192.168.203.50
+User: postgres
+Password: abcd1234
+
+Database: health_exam
+User: he_user
+Password: heTcci
+
+
+TCC Wlan
+台訊內網 wifi
+
+TCC_HQ_GUEST
+12f_guest
+tcc1102
+
+
+GLASSFISH_HOME
+D:\glassfish3\glassfish3
+D:\glassfish-4.1\glassfish4
+JAVA_HOME
+C:\Java\jdk1.6.0_38
+C:\Java\jre1.8.0_40
+
+C:\Java\jdk1.7.0_25
+
+
+
+匯入設定檔 (本機)
+asadmin multimode --file resources-local.conf 
+
+匯入設定檔 (遠端 指定IP)
+asadmin --host 127.0.0.1 multimode --file resources.conf
+
+匯入DB連線 
+20160720 1313
+
+遠端連進公司
+192.168.250.14
+
+server Libtary
+
+
+
+--星展銀行
+網銀使用者帳號：
+KYOSUKE1018
+臺幣星禧數位帳號：
+60012537666
+
+kyosuke1018@gmail.com
+esun0601
+
+
