@@ -1,0 +1,210 @@
+connect 81 遠端桌面
+
+
+連主要kernel
+C:\Windows\System32\mstsc.exe /admin
+主要console
+C:\Windows\System32\mstsc.exe  /public /console /admin
+
+登入帳密群組
+devadmin
+Abcd1234 (固定)
+abcd12#4
+abcd123$
+Abcd1234
+TCCGROUP
+
+command prompt
+
+change dir(cd)到
+d:glassfish3.1.1/bin下
+D:\glassfish3.1.2.2\bin下
+d:
+ 
+執行
+asadmin stop-domain
+asadmin start-domain
+
+
+Stop domain
+Clean glassfish\domains\domain1\applications
+Start domain
+Deploy now.
+
+
+若是permGen
+81可以直接去工作管理員kill java 最大的 
+
+看ap下jar檔是否有版本衝突
+D:\glassfish3.1.1\glassfish\domains\domain1\applications
+
+
+81
+執行ETL
+cmd
+d:
+cd etl
+cd data-integration_400
+spoon
+
+確認connection
+sap_tcc_rfcuser
+sap_tcc_cn_rfcuser
+db_warehouse
+
+
+
+
+putty
+192.168.203.62
+192.168.203.50
+root
+11111111
+
+ls
+路徑
+62
+cd /opt/glassfish3.1.2.2/glassfish/bin
+cd /opt/glassfish3.1.2.2/glassfish/domains/domain1/lib
+
+cd /opt/payara5/glassfish/domains/domain1/logs
+
+50
+cd /opt/glassfish4/glassfish/bin
+cd /opt/glassfish4/glassfish/domains/domain1/lib
+
+換jar檔要重啟server!
+
+
+log
+cd /opt/glassfish4/glassfish/domains/domain1/logs
+
+找檔案
+find JCoService.log
+看檔案
+cat JCoService.log
+cat server.log
+
+cat  log
+
+
+stop command
+./asadmin stop-domain
+若outofmemory
+無法直接stop
+要先找出正在處理的號碼
+(ps -tf grep glassfish)
+ps aux | grep java
+ps aux | grep glassfish
+
+(ex root xxxxxx)
+root 26225
+	 26425
+oracle 5152
+
+
+kill -9 23529
+kill -9 12722
+
+10390
+12722
+kill -9 10390
+kill -9 12722
+
+
+
+強制清除
+kill -9 xxxxx
+再次確認
+(ps -tf grep glassfish)
+ps aux | grep java
+
+./asadmin start-database
+./asadmin start-domain
+exit
+
+
+glassfish deploy不上去
+Error occurred during deployment: Exception while loading the app : 
+java.lang.IllegalStateException: ContainerBase.addChild
+.... 
+
+就再次重啟glassfish 
+
+
+
+ETL
+prod
+192.168.204.26 
+192.168.204.30
+sa7000
+Icc12345678
+
+\\192.168.203.81\jobs
+
+prod
+ETL程式放到 公用資料夾
+\\192.168.204.26\Softwares\kyle
+\\192.168.204.30\software\kyle
+在copy過去
+
+
+JCO server 
+prod
+192.168.204.46 
+192.168.204.47
+QA
+192.168.203.62 同一台
+
+glassfish 4.0.1
+204.45 dev windows
+\\192.168.204.45\glassfish4
+
+204.50 ==> 203.50 QA  linux
+
+prod
+192.168.204.48
+192.168.204.49
+
+http://192.168.204.46/TCJCoServer/resources/callRfcService/transSAPToDW?sapClientCode=tcc&fileType=rfq&fileNoS=2140005140
+
+
+ETL
+192.168.204.26 01
+192.168.204.30 02
+
+SAP稽核 限制IP
+以後要透過ETL server連 (正式)
+測試機沒關係
+
+192.168.200.30 
+520
+
+192.168.201.125
+268
+
+
+遠端連 會議室投影機台
+測試IE8用
+192.168.200.200
+ /public /console /admin
+ 
+sql server 
+192.168.2.92
+AD login
+
+162.168.203 pm_user01
+HQ_PM_INFO
+PM_INFO
+
+file upload
+去上傳的路徑
+ cd /opt/FileUpload
+ ls
+建立目錄
+ mkdir pmDoc
+ mkdir gaportal
+ 
+share folder  
+192.168.204.20
+/opt/FileTransfer/BIExcel/BiWrTireTempPic 
