@@ -1,0 +1,32 @@
+private String cleanXSS(String paramString) {
+		if (paramString == null)
+			return "";
+		String str = paramString;
+		str = str.replaceAll("", "");
+		Pattern localPattern = Pattern.compile("<script>(.*?)</script>", 2);
+		str = localPattern.matcher(str).replaceAll("");
+		localPattern = Pattern.compile("src[\r\n]*=[\r\n]*\\'(.*?)\\'", 42);
+		str = localPattern.matcher(str).replaceAll("");
+		localPattern = Pattern.compile("src[\r\n]*=[\r\n]*\\\"(.*?)\\\"", 42);
+		str = localPattern.matcher(str).replaceAll("");
+		localPattern = Pattern.compile("</script>", 2);
+		str = localPattern.matcher(str).replaceAll("");
+		localPattern = Pattern.compile("<script(.*?)>", 42);
+		str = localPattern.matcher(str).replaceAll("");
+		localPattern = Pattern.compile("eval\\((.*?)\\)", 42);
+		str = localPattern.matcher(str).replaceAll("");
+		localPattern = Pattern.compile("expression\\((.*?)\\)", 42);
+		str = localPattern.matcher(str).replaceAll("");
+		localPattern = Pattern.compile("javascript:", 2);
+		str = localPattern.matcher(str).replaceAll("");
+		localPattern = Pattern.compile("vbscript:", 2);
+		str = localPattern.matcher(str).replaceAll("");
+		localPattern = Pattern.compile("onload(.*?)=", 42);
+		str = localPattern.matcher(str).replaceAll("");
+		str = str.replaceAll("\\(", "&#40;").replaceAll("\\)", "&#41;");
+		str = str.replaceAll("'", "&#39;");
+		str = str.replaceAll("\\\"", "&#34;");
+		str = str.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+		str = str.replaceAll("&", "&amp;");
+		return str;
+	}
